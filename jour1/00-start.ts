@@ -6,6 +6,8 @@ Angular semaine 2 et 3
 
 support sur typescript / angular en plus du support disponible sur la plateforme 3WA
 
+https://github.com/webdevproformation/angular-3wa-sept21
+
 --------------------- 
 
 typescript

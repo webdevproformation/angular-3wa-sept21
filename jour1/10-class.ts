@@ -99,7 +99,7 @@ console.log(f.genererFiche());
 // retourner le code suivant 
 /* <div>
     <h1>titre</h1>
-    <p>titre</p>
+    <p>enoncé</p>
     <ul>   
         <li>nb point : point ;</li>
         <li>date : 27/09/2021</li>
