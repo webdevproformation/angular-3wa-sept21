@@ -70,3 +70,4 @@ console.log(c);
 // nom 
 
 // instancier la class Piano avec des valeurs convenables 
+// transpiler et exécuter dans nodejs
