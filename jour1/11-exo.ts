@@ -29,3 +29,5 @@ const e2 = new Exercice("exo 2", "générer une fonction sur les palydrome" , 20
 
 console.log(e1.print(), e2.print());
 // tsc 11-exo.ts && node 11-exo.js
+
+// 12-class-suite.ts
