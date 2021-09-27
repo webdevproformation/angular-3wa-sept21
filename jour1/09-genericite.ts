@@ -127,3 +127,6 @@ let o2 = {
 
 
   console.log(concatener3(o1, o2))
+
+  // class / module / decorateur 
+  // 14h09 !!bon appétit !!! 
