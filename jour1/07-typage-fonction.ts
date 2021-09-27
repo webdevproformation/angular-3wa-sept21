@@ -58,9 +58,11 @@ console.log(cercle2.aire())
 // créer le fichier 08-exo.ts 
 // ce fichier contient la variable suivante :
 // typer la variable json
+// http://www.json2ts.com/
+
 
 /**
-const json = [
+const json: Array<Object> = [
   {
     "_id": "61519cb5eed36d60c8d7278b",
     "index": 0,
