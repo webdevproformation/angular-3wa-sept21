@@ -57,3 +57,5 @@ const liste5_v4:Array<Achat> = [
     {id: 2 , nom : "poire" , quantite : 3},
     {id: 3 , nom : "ananas" , quantite : 2},
 ];
+
+// 07-typage-fonction.ts
