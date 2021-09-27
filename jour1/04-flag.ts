@@ -29,3 +29,4 @@ const toto = "bonjour les amis";
 // pause rdv dans 15 min => 11h17 @ toute suite 
 
 // typage / interface 
+// 05-typage.ts
