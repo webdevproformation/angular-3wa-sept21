@@ -130,3 +130,5 @@ let o2 = {
 
   // class / module / decorateur 
   // 14h09 !!bon appétit !!! 
+
+// 10-class.ts
