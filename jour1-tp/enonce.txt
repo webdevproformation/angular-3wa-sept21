@@ -1,0 +1,19 @@
+// créer deux fichiers exo-lib.ts 
+
+// dans le fichier exo-lib.ts 
+// créer la class suivante : 
+// class Salutation{
+    qui contient un attribut data qui contient un tableau avec les informations suivantes 
+    ["Bonjour","Hello", "Buenos dias" , "باح الخير"]
+
+    qui contient une méthode random 
+     retourner au hasard une des valeurs qui est stockée dans l'attribut data 
+
+    exporter par défaut cette class
+
+// dans le ficheir main.ts 
+
+    importer la class Salutation et l'initialiser 
+    utiliser la méthode random 4 fois et afficher le résultat dans la console du terminal
+
+// transformer le fichier compiler le fichier main.ts => main.js
