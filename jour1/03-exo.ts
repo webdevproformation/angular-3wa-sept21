@@ -21,3 +21,4 @@ for (let element of tableau){
     console.log(element.charAt(0).toUpperCase()+element.slice( 1 ));
 }
  */
+// 04-flag.ts
