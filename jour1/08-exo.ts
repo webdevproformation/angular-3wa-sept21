@@ -225,3 +225,5 @@ const json: Array<JSONInterface>  = [
       ]
     }
   ]
+
+// 09-genericite.ts
