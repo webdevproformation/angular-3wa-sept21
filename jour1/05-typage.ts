@@ -47,5 +47,30 @@ const eleves : Array<iEtudiant> = [
 const eleves2 : iEtudiant[] = [
     { nom : "Alain" , age : 12 , dtRentree : "12/12/2021" },
     { nom : "Charles"   }
-]
+];
+
+// créer le fichier 06-exo.ts 
+// pouvez vous typer les variables suivantes :
+// ce fichier va contenir plusieurs variables
+// veuillez les typer les 5 variables suivantes correctement :
+
+// liste1 = "pêche poire ananas";
+// liste2 = ["pêche" , "poire", "ananas"];
+// liste3 = ["pêche", 4, "poire", 3, "ananas" , 2];
+/* liste4 = {
+    items : ["pêche", 4, "poire", 3, "ananas" , 2],
+    budget : 40 ,
+    unite : "euros"
+};*/
+/* liste5 = [
+    {id: 1 , nom : "pêche" , quantite : 4},
+    {id: 2 , nom : "poire" , quantite : 3},
+    {id: 3 , nom : "ananas" , quantite : 2},
+];*/
+
+
+
+
+
+
 
