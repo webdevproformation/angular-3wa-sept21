@@ -1,0 +1,39 @@
+Angular framework (très grosse librairie ) qui permet de créer UI (User Interface)
+// site internet
+
+// Attention ne pas confondre Angular et AngularJS 
+// AngularJS => version 1 de la librairie
+// Angular => à partir de la version 2 jusqu'à celle d'aujourd'hui 
+
+// entre version 1 et les versions suivantes rupture très forte dans la manière d'utiliser le framework 
+
+// dans la version 1 => librairie qui ressemble à jQuery 
+// 2010 - 2016
+// à partir de la version 2    
+// à partir de 2016 repenser intégralement la manière d'utiliser la librairie 
+
+// node qui a complètement modifié la manière d'utiliser la librairie 
+
+--------------------
+
+// utiliser la dernière version disponible => version 12 
+// https://angular.io/
+// historique de la librairie : https://en.wikipedia.org/wiki/Angular_(web_framework)
+
+--------------------
+
+// install @angular/cli 
+
+// npm i -g @angular/cli 
+// @angular/cli@12.2.7
+// ng --version
+
+// cd ..
+// ng new semaine2
+// N 
+// CSS 
+// créer un dossier semaine2 
+// fichier / dossier 
+
+// cd semaine2
+// ng serve --open
