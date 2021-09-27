@@ -8,5 +8,12 @@ export default class Salutation{
     }
 }
 
+/**
+angular
+https://formation.webdevpro.net/angular
+login : angular
+passwd : google
+ */
+// créer un nouveau dossier jour1-angular
 
 
