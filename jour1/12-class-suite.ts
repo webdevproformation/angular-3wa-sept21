@@ -52,3 +52,21 @@ class Carre extends Forme{
 }
 const c = new Carre("#1234", 4 , 20);
 console.log(c);
+
+// créer le fichier 13-exo.ts 
+// créer une class Instrument
+// dispose de propriétés 
+// poids : string
+// marque : string
+// prix : number
+// ces trois propriétés sont publiques 
+
+// créer une class enfant Instrument => Piano
+// en plus de la propriété du parent cette class va disposer d'une propriété en plus 
+// propriétaire qui est de type Propriétaire 
+
+// créer une dernière class Proprietaire
+// id
+// nom 
+
+// instancier la class Piano avec des valeurs convenables 
