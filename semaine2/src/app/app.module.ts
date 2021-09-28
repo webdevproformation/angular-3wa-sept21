@@ -11,6 +11,7 @@ import { SixComponent } from './jour2/six.component';
 import { SeptComponent } from './jour2/sept.component';
 import { HuitComponent } from './jour2/huit.component';
 import { NeufComponent } from './jour2/neuf.component';
+import { DixComponent } from './dix.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { NeufComponent } from './jour2/neuf.component';
     SixComponent,
     SeptComponent,
     HuitComponent,
-    NeufComponent // rdv 11h15 @ toute suite !!
+    NeufComponent,
+    DixComponent // rdv 11h15 @ toute suite !!
   ],
   imports: [
     BrowserModule

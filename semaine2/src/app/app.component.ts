@@ -13,6 +13,9 @@ import { Component } from '@angular/core';
       <article>
         <neuf></neuf>
       </article>
+      <article>
+        <dix></dix>
+      </article>
     </section>
   </div>`,
   styleUrls: ['./app.component.css']

@@ -8,14 +8,12 @@ envoyer des variables du composant vers SA vue à lui même
 créer le composant dix 
 
 ce composant dispose des attributs suivants :
-
 titre : titre principale
 planning : { 
     lundi : [ typescript , install angular]
     mardi : [ ng generate , composant , service],
     mercredi : [ rxjs , animation ]
 }
-
 p : lorem ipsum 
 
 vous devez générer le html suivant dans le composant

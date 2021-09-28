@@ -8,13 +8,12 @@
 }
 .row{
     display: flex;
-    margin: 0 -20px;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 .row > * {
-    margin:20px;
-    padding:20px;
-    width: 25%;
-    box-sizing: border-box;
+    width: calc(25% - 20px);
+    padding: 0 20px;
     border:1px solid #222;
+    box-sizing: border-box;
 }
