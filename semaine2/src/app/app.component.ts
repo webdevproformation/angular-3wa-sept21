@@ -16,6 +16,9 @@ import { Component } from '@angular/core';
       <article>
         <dix></dix>
       </article>
+      <article>
+        <onze></onze>
+      </article>
     </section>
   </div>`,
   styleUrls: ['./app.component.css']
