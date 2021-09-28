@@ -1,0 +1,29 @@
+https://github.com/webdevproformation/angular-3wa-sept21
+
+
+angular
+https://formation.webdevpro.net/angular
+login : angular
+passwd : google
+
+---------------------- 
+
+nous avons créé le projet semaine2 
+
+le dossier jour2 => prendre des notes / énoncés / cas pratique / correction ...
+
+---------------------- 
+
+des questions ?? typescript 
+                 installé angular 
+
+ng serve -o
+ng serve --output => lancer le projet http://localhost:4200
+
+lancer un autre projet simultanément problème de port d'écoute
+ng serve --output --port 4201 => lancer le projet http://localhost:4201
+
+serveur de développement : HMR = hot module reload 
+
+
+

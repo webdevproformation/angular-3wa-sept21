@@ -1,0 +1,35 @@
+angular.json => modifier les commandes ng generate component
+
+src/ source 
+
+index.html (le point de départ)
+
+<app-root></app-root> => TOUT ce que vous allez écrire va être injecté par angular dans cette balise 
+
+en plus 5 balises script qui appellent de fichier .js 
+(webpack qui va générer automatiquement ces 5 fichiers et rajouter des à la volée et qui va se charger de les regénérer dès que vous modifier un fichier source)
+
+runtime ==== webpack
+polyfill === assurer la retro compatibilité "flex => récent IE 11 IE 10 "
+vendor ==== node_modules
+style.css === écrire du css => javascript 
+main.js === votre application qui va être écrite par vous dans le dossier src 
+
+assets => documents pdf / img / icone ...
+
+environnemnet coder aspect pour la prod / développement 
+
+src/app => 
+
+app.module.ts 
+
+créer un nouveau dossier dans src/app/ jour2
+
+1 créer un fichier  => premier.component.ts en respectant tous les règles que je viens de vous présenter
+
+2 déclarer le composant pour qu'il soit disponible dans notre module 
+
+src/app/app.module.ts
+
+3 utiliser le composant l'insérer dans le DOM
+src/app/app.component.html
