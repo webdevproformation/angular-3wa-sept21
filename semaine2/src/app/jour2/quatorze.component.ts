@@ -39,3 +39,4 @@ export class QuatorzeComponent implements OnInit {
 }
 
 // service => permettre de partager de données entre les différents composants 
+// rdv dans 16h23 @ toute suite !!! 

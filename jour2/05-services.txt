@@ -1,0 +1,18 @@
+pour partager entre des composants 
+
+plusieurs possibilités 
+- envoyer des données du composant parent => composant enfant
+- service type de fichier qui permet de partager des données entre les composants 
+
+- commme pour les composants 
+ créer manuelle vos services // utiliser outil en ligne de commande 
+
+ ng generate service nom-service
+
+ dans le dossier jour2 => créer nouveau sous dossier => services 
+
+    créer le composant 
+    data.service.ts 
+
+déclarer dans le app.module.ts
+

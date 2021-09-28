@@ -13,7 +13,8 @@
 }
 .row > * {
     width: calc(25% - 20px);
-    padding: 0 20px;
+    padding: 20px;
     border:1px solid #222;
     box-sizing: border-box;
+    margin-bottom: 20px;
 }

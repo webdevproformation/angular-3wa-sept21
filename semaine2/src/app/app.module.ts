@@ -16,6 +16,7 @@ import { OnzeComponent } from './jour2/onze.component';
 import { DouzeComponent } from './jour2/douze.component';
 import { TreizeComponent } from './jour2/treize.component';
 import { QuatorzeComponent } from './jour2/quatorze.component';
+import { DataService } from './jour2/services/data.service';
 
 
 @NgModule({
@@ -39,7 +40,9 @@ import { QuatorzeComponent } from './jour2/quatorze.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [
+    DataService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
