@@ -1,1 +1,9 @@
 créer le composant onze
+
+créer le composant douze
+
+Comment on fait pour supprimer un composant ??? Commande ?? ou Non ??
+
+- supprimer un composant => supprimer manuellement ou les fichiers du composant 
+- enlever la déclaration ET l'import dans le fichier app.module.ts 
+
