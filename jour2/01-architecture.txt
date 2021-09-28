@@ -33,3 +33,17 @@ src/app/app.module.ts
 
 3 utiliser le composant l'insérer dans le DOM
 src/app/app.component.html
+
+// exo 1 
+créer le composant Deux
+ce composant doit être stocké dans le dossier src/app/jour2 
+
+ce composant contient le code html suivant comme template
+<div>
+    <h2>Composant 2</h2>
+    <p>lorem ipsum</p>
+</div>
+
+ce composant a pour sélecteur "deux"
+
+afficher ce composant dans la vue principale au dessus de Ressource
