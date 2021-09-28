@@ -33,4 +33,18 @@ vous devez générer le html suivant dans le composant
 </ul>
 .... 
 
-// 
+créer le composant treize
+
+plusieurs bouton 
+3 boutons : action 1 / action 2 / action 3
+p qui est vide
+
+si vous cliquez sur le bouton 1 => remplir le p avec le chiffre 1
+si vous recliquez sur  bouton 1 => remplir le p avec le chiffre 2
+si vous recliquez sur  bouton 1 => remplir le p avec le chiffre 3 ... à l'infini
+
+si vous cliquez sur le bouton 2 => masquer le p 
+si vous recliquez sur le bouton 2 => afficher le p 
+
+si vous cliquez sur le bouton 3 => mettre le style du p en texte rouge en taille de police 30px
+si vous recliquez sur le bouton 3 => remettre le style dans son état initial
