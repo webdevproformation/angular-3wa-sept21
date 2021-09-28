@@ -16,3 +16,15 @@ plusieurs possibilités
 
 déclarer dans le app.module.ts
 
+// exo 6 
+utiliser le service DataService dans le composant deux 
+
+afficher tous les articles du stockées dans le service dans le composant 
+
+liste <ul>
+    <li>nom - prix <button></button></li>
+</ul>
+
+ajouter une méthode dans le service permettre de supprimer dans la ram un élément de la propriété data 
+
+

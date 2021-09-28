@@ -25,4 +25,14 @@ export class DataService{
         return this.data.filter( (item : Produit) =>  item.id === id  );
     }
 
+    public delete( id : number ) : boolean{
+        const produitASupprimer : (Produit|undefined) = this.data.find( item => item.id === id);
+        if(produitASupprimer === undefined){
+            return false;
+        }
+        const index : number = this.data.indexOf(produitASupprimer)  ; 
+        this.data.splice(index, 1);
+        return true;
+    }
+
 }
