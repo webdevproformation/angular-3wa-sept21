@@ -42,8 +42,46 @@ ce composant contient le code html suivant comme template
 <div>
     <h2>Composant 2</h2>
     <p>lorem ipsum</p>
-</div>
+</div> "" ``
 
 ce composant a pour sélecteur "deux"
 
 afficher ce composant dans la vue principale au dessus de Ressource
+
+// pas compliqué de créer un composant => fastidieux
+// l'outil en ligne de commande ng 
+// réaliser l'étape 1 (créer le composant) + étape 2 (déclaration dans app.module.ts)
+// Boilerplate => code de base pour créer votre composant rapidement et facilement
+
+// ng new => créer projet
+// ng serve => lancer le serveur de développement 
+
+// créer des éléments de Angular component / service / pipe / class 
+// ng generate
+// ng g
+// cd semaine2
+// ng generate --help
+// ng generate component  --help
+
+// créer le composant trois 
+// ng g c jour2/trois
+
+// créé dans le dossier jour2 => créer un sous dossier trois 
+// dans 4 fichiers 
+// ng g c [dossier/]composant 
+
+// ng g c [dossier/]composant  dispose de drapeaux pour éviter d'avoir 
+// juste le fichier composant.component.ts sans 3 autres
+
+// ng g c jour2/quatre --flat pas de sous dossier
+// ng g c jour2/cinq --flat --prefix=toto /  pas de sous dossier toto-cinq
+
+// ng g c jour2/six --flat --prefix --skipTests=true
+
+ng g c jour2/sept --flat -it -is -p --skipTests=true
+
+// tsc fichier.ts --drap1 --drap2 valeur --drap3 .... 
+// tsc + tsconfig.json 
+
+// ng fonctionne avec le fichier de configuration 
+// angular.json
