@@ -27,6 +27,7 @@ interface PlanningInterface {
         <li>{{ planning.mercredi[0]}}</li>
         <li>{{ planning.mercredi[1]}}</li>
     </ul>
+    <div [innerHTML]="generatePlanning()"></div> 
   `,
   styles: [
   ]
@@ -48,17 +49,28 @@ export class DixComponent implements OnInit {
     return resultat;
   }
 
-  /* public generatePlanning() :string{
+  public generatePlanning() :string{
     let planning = "";
-    for(let jour  in this.planning){
+    const valeurs = Object.values(this.planning) ; // objet => tableau sur les valeurs de l'objet
+    // [[ "typescript" , "install angular"] , [ "ng generate" , "composant" , "service"] , [ "rxjs" , "animation" ] ]
+    const jours = Object.keys(this.planning) ; // objet => tableau sur les keys de l'objet
+    // ["lundi", "mardi", "mercredi"]
+
+    jours.forEach(function(jour : string , index :number){
       planning += "<h2>"+jour+"</h2>";
       planning += "<ul>";
+      valeurs[index].forEach(function( matiere : string ){
+        planning += "<li>"+ matiere +"</li>";
+      })
       planning += "</ul>";
-    }
+    });
     return planning ;
-  } */
+  } 
 
-  constructor() { }
+  constructor() {
+    this.generatePlanning()
+
+   }
 
   ngOnInit(): void {
   }
