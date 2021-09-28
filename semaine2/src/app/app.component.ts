@@ -25,6 +25,9 @@ import { Component } from '@angular/core';
       <article>
         <treize></treize>
       </article>
+      <article>
+        <quatorze></quatorze>
+      </article>
     </section>
   </div>`,
   styleUrls: ['./app.component.css']

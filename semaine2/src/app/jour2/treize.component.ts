@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
       <button (click)="action1()">action 1</button>
       <button (click)="action2()">action 2</button>
       <button (click)="action3()">action 3</button>
-      <p *ngIf="show" [style]="style" >{{ contenu }}</p>
+      <p *ngIf="show" [style]="style" [innerText]="contenu"></p>
   `,
   styles: [
   ]

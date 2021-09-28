@@ -15,6 +15,7 @@ import { DixComponent } from './dix.component';
 import { OnzeComponent } from './jour2/onze.component';
 import { DouzeComponent } from './jour2/douze.component';
 import { TreizeComponent } from './jour2/treize.component';
+import { QuatorzeComponent } from './jour2/quatorze.component';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { TreizeComponent } from './jour2/treize.component';
     DixComponent,
     OnzeComponent,
     DouzeComponent,
-    TreizeComponent
+    TreizeComponent,
+    QuatorzeComponent
   ],
   imports: [
     BrowserModule

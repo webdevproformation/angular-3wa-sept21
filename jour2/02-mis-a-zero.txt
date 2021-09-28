@@ -48,3 +48,17 @@ si vous recliquez sur le bouton 2 => afficher le p
 
 si vous cliquez sur le bouton 3 => mettre le style du p en texte rouge en taille de police 30px
 si vous recliquez sur le bouton 3 => remettre le style dans son état initial
+
+.... 
+
+créer le composant quatorze
+3 boutons : action 1 / action 2 / action 3
+3 p qui sont remplit avec un texte de votre choix 
+
+par défaut le 1er p est affiché et les deux autres p sont masqués
+
+si vous cliquez sur le 1er bouton afficher le 1er p et masquer les deux autres p (2eme et 3eme)
+si vous cliquez sur le 2eme bouton afficher le 2èeme p et masquer les deux autres p (1er et 3eme)
+si vous cliquez sur le 3eme bouton afficher le 3eme p et masquer les deux autres p (1er et 2eme)
+
+=> système d'onglet
