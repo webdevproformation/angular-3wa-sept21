@@ -10,6 +10,7 @@ import { CinqComponent } from './jour2/cinq.component';
 import { SixComponent } from './jour2/six.component';
 import { SeptComponent } from './jour2/sept.component';
 import { HuitComponent } from './jour2/huit.component';
+import { NeufComponent } from './jour2/neuf.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { HuitComponent } from './jour2/huit.component';
     CinqComponent,
     SixComponent,
     SeptComponent,
-    HuitComponent
+    HuitComponent,
+    NeufComponent // rdv 11h15 @ toute suite !!
   ],
   imports: [
     BrowserModule

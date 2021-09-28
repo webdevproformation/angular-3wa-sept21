@@ -1,0 +1,6 @@
+src/app/app.component.ts
+
+du style 
+
+envoyer des variables du composant vers SA vue à lui même 
+
