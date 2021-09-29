@@ -1,0 +1,51 @@
+
+*ngIf
+*ngFor 
+
+property binding
+<balise [proprieteDOM]="valeur" ></balise>
+
+référence 
+<balise #ref></balise>
+
+directives d'action 
+<balise (actionDom)="methodeClass()" ></balise>
+
+// -----------------
+// nouveautés
+
+banane dans une box => two way binding
+<balise [(ngModel)]="valeur"></balise>
+// permet de agir sur la valeur sans avoir créer un prop dans le composant 
+
+<balise [ng-style]=""></balise> => styliser la balise avec un objet js 
+
+<balise [ng-class]=""></balise> => gérer l'attribut class de la balise en fonction de cas de figure 
+
+<balise [ng-switch="valeur"]>
+    <balise-enfant *ngSwitchCase=""></balise-enfant>
+    <balise-enfant *ngSwitchCase=""></balise-enfant>
+    <balise-enfant *ngSwitchCase=""></balise-enfant>
+    <balise-enfant *ngSwitchDefault></balise-enfant>
+</balise>
+
+ng g component jour3/sidebar
+
+// ------------------------------
+
+créer un nouveau un composant newsletter 
+
+input de type text  => prop email
+input de type text  => prop service 
+input de type submit 
+<p></p>
+
+pour les deux premiers champs => utilise le two way binding récupérer directement les valeurs saisies dans des propriétés de class 
+
+lorsque la personne va cliquer sur le bouton submit 
+si la valeur saisies est un email valide ET que la personne la saisie dans le deuxième champ 
+"web" => insérer dans le p le texte suivant : 
+"votre demande va être traitée dans les meilleurs délais"
+
+
+

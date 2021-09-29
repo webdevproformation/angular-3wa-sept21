@@ -18,8 +18,11 @@ import { Component } from '@angular/core';
         <div class="col-6">
           <jour3-article></jour3-article>
         </div>
-        <div class="col-6">
+        <div class="col-3">
           <jour3-style></jour3-style>
+        </div>
+        <div class="col-3">
+          <sidebar></sidebar>
         </div>
       </section>
   </div>`
