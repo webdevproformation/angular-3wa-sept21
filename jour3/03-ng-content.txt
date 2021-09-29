@@ -1,0 +1,29 @@
+possible d'envoyer du html du parent vers l'ensemble 
+
+<ng-content></ng-content>
+
+
+composant parent 
+
+        <div>
+            <enfant [titre]="titre">
+                <p>lorem ipsum</p>
+                <ul>
+                    <li>element 1</li>
+                    <li>element 1</li>
+                </ul>
+            </enfant>
+        </div>
+
+composant enfant 
+
+        <h2>{{titre}}<h2>
+        <ng-content></ng-content> => reprendre TOUTES les balises
+        écrites dans la balise enfant qui est dans le composant parent 
+
+ng g c jour3/menu
+
+insérer dans le composant parent app.component.ts
+
+
+

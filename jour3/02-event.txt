@@ -5,7 +5,7 @@ instagram = 0
 
 div    
     button  -
-    span 0 (depuis le parent => article
+    span 0 (depuis le parent => article )
     button +
 
 ajouter le composant instagram dans le composant parent article 

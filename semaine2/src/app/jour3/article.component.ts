@@ -8,8 +8,9 @@ import { CommentaireInterface } from './commentaire.interface';
       <h2>{{titre}}</h2>
       <p>{{contenu}}</p>
       <like [data]="like" (augmenter)="augmenterLike($event)"></like>
+      <instagram [instagram]="instagram" (actionDiminuer)="diminuer()" (actionAugmenter)="augmenter()"></instagram>
       <div *ngFor="let commentaire of commentaires">
-        <commentaire [commentaire]="commentaire"  ></commentaire>
+        <commentaire [commentaire]="commentaire"></commentaire>
       </div>
     </article>
   `,
@@ -18,9 +19,19 @@ import { CommentaireInterface } from './commentaire.interface';
 })
 export class ArticleComponent implements OnInit {
 
+  public diminuer(){
+    this.instagram--;
+  }
+
+  public augmenter(){
+    this.instagram++;
+  }
+
   public augmenterLike( $event :number ){
     this.like++;
   }
+
+  public instagram : number = 0 ;
 
   public titre : string = "premier article";
   public contenu : string = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mattis lorem vitae suscipit consectetur. Nam dapibus quis massa id dictum. Cras non odio eget augue lobortis laoreet ut ac risus. Nulla luctus, magna vitae pellentesque euismod, dolor tortor vehicula eros, ut tempor est turpis quis nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at tortor at nunc gravida eleifend. Phasellus semper venenatis elit, in euismod tellus scelerisque a. Pellentesque vel felis sed metus bibendum porta."
