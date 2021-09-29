@@ -1,0 +1,14 @@
+Ajouter le composant Article un nouvel attribut 
+instagram = 0 
+
+ créer un nouveau composant instagram ng g c jour3 instagram
+
+div    
+    button  -
+    span 0 (depuis le parent => article
+    button +
+
+ajouter le composant instagram dans le composant parent article 
+
+si vous cliquez sur le bouton - => diminuer de - 1 le chiffre instagram dans le parent
+si vous cliquez sur le bouton + => augmenter de + 1 le chiffre instagram dans le parent

@@ -4,7 +4,7 @@ import { Component, OnInit, Input , Output , EventEmitter } from '@angular/core'
   selector: 'like',
   template: `
   <div>
-    <button class="btn btn-success me-2" (click)="clickBtn()" >action</button>
+    <button class="btn btn-success me-2" (click)="clickBtn(data)" >action</button>
     <span class="badge bg-primary">{{ data }}</span>
   </div>
   `,
@@ -15,10 +15,10 @@ export class LikeComponent implements OnInit {
 
   @Input() data : number = 0 ; 
 
-  @Output() augmenter = new EventEmitter() ;
+  @Output() augmenter = new EventEmitter<number>() ;
 
-  public clickBtn(){
-    this.augmenter.emit();
+  public clickBtn(data :number){
+    this.augmenter.emit(data);
   }
 
   constructor( ) { }
