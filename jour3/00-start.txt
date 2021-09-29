@@ -106,4 +106,12 @@ ces données doivent être envoyées à un composant enfant Commentaire (à cré
   }
 ]
 
+// rdv 11h07 @output enfant => parent
 
+relation entre les composants 
+
+déclencher une action dans l'enfant => ce qui va déclencher une action dans le parent (modifier une valeur)
+qui va être propagée vers l'enfant 
+
+si je clique sur le bouton action (qui est like (enfant de article)) 
+=> augmentation de + 1 de la valeur de like qui est dans le composant article
