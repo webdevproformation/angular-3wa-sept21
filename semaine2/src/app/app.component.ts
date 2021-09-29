@@ -14,6 +14,9 @@ import { Component } from '@angular/core';
         </menu> 
       </section>
       <section class="row my-3">
+        <contact></contact>
+      </section>
+      <section class="row my-3">
         <newsletter></newsletter>
       </section>
       <section class="row">

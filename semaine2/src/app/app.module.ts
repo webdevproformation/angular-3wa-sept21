@@ -11,6 +11,7 @@ import { MenuComponent } from './jour3/menu.component';
 import { StyleComponent } from './jour3/style.component';
 import { SidebarComponent } from './jour3/sidebar.component';
 import { NewsletterComponent } from './jour3/newsletter.component';
+import { ContactComponent } from './jour3/contact.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { NewsletterComponent } from './jour3/newsletter.component';
     MenuComponent,
     StyleComponent,
     SidebarComponent,
-    NewsletterComponent 
+    NewsletterComponent,
+    ContactComponent 
   ],
   imports: [
     BrowserModule,
