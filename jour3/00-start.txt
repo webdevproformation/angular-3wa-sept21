@@ -1,0 +1,61 @@
+https://github.com/webdevproformation/angular-3wa-sept21
+
+
+angular
+https://formation.webdevpro.net/angular
+login : angular
+passwd : google
+
+--- réinitialiser le projet 
+
+src/app/app.module.ts 
+
+tout supprimer sauf AppComponent / BrowserModule
+
+src/app/app.component.ts
+
+vider toutes les balises => de la propriété template 
+
+--- redemarrer le serveur de production 
+
+--- installer la librairie css bootstrap 
+// npm i bootstrap
+// bootstrap/dist/css/bootstrap.min.css
+
+// modifier le fichier angular.json => .css compiler avec angular 
+
+"./node_modules/bootstrap/dist/css/bootstrap.min.css"
+
+stopper et relancer le serveur pour que cette nouvelle config soit prise en compte 
+ng serve -o
+
+
+communiquer un composant avec sa vue 
+
+prop / méthode (class) => envoyer des informations au html du composant 
+{{ }}
+[innerHTML]
+*ngFor *ngIf 
+(click)="methode()"
+#refBalise
+
+service qui va partager des informations entre les composants => vue du composant 
+
+------------------------
+
+dossier app créer un nouveau sous dossier jour3
+
+Article 
+    titre 
+    contenu 
+    div 
+        button
+        span
+
+découper le composant Article et enlever 
+    div 
+        button
+        span
+pour la mettre dans un autre composant => Like
+
+

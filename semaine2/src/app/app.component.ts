@@ -2,36 +2,15 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  template: `<div class="container">
-    <section class="row">
-      <article>
-        <Premier></Premier>
-      </article>
-      <article>
-        <deux></deux>
-      </article>
-      <article>
-        <neuf></neuf>
-      </article>
-      <article>
-        <dix></dix>
-      </article>
-      <article>
-        <onze></onze>
-      </article>
-      <article>
-        <douze></douze>
-      </article>
-      <article>
-        <treize></treize>
-      </article>
-      <article>
-        <quatorze></quatorze>
-      </article>
-    </section>
-  </div>`,
-  styleUrls: ['./app.component.css']
+  template: `
+  <div class="container">
+      <h1>{{ title }}</h1>
+      <hr>
+      <section class="row">
+        <jour3-article></jour3-article>
+      </section>
+  </div>`
 })
 export class AppComponent {
-  title = 'semaine2';
+  title = 'jour3';
 }

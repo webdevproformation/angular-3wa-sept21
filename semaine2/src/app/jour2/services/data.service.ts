@@ -21,7 +21,7 @@ export class DataService{
         return this.data;
     }
 
-    public get(id : number ) : Array<Produit> {
+    public get( id : number ) : Array<Produit> {
         return this.data.filter( (item : Produit) =>  item.id === id  );
     }
 
