@@ -11,8 +11,10 @@ import { Component } from '@angular/core';
             <input type="submit" class="btn btn-danger ms-2">
           </form>
           <p class="text-light info" >Description</p>
-        </menu>
-        <hr>  
+        </menu> 
+      </section>
+      <section class="row my-3">
+        <newsletter></newsletter>
       </section>
       <section class="row">
         <div class="col-6">

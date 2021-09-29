@@ -10,6 +10,7 @@ import { InstagramComponent } from './jour3/instagram.component';
 import { MenuComponent } from './jour3/menu.component';
 import { StyleComponent } from './jour3/style.component';
 import { SidebarComponent } from './jour3/sidebar.component';
+import { NewsletterComponent } from './jour3/newsletter.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { SidebarComponent } from './jour3/sidebar.component';
     InstagramComponent,
     MenuComponent,
     StyleComponent,
-    SidebarComponent 
+    SidebarComponent,
+    NewsletterComponent 
   ],
   imports: [
     BrowserModule,
