@@ -31,13 +31,23 @@ import { Component, OnInit } from '@angular/core';
         <input type="submit" class="btn btn-dark btn-lg " [disabled]="!f.valid">
       </div>
     </form>
+    <div class="alert alert-success" *ngIf="show">
+      Merci pour votre message 
+    </div> 
   `
 })
 export class ContactComponent implements OnInit {
+  public show : boolean = false;
   public submitFormulaire( f :any , email :any , commentaire :any){
     if(f.valid){
       console.log(f.value);
       // envoyer les informations saisit à un service
+      // mettre un message que tout est conforme 
+      this.show = true;
+      setTimeout( () =>{
+        this.show = false ;
+      } , 2000);
+
       f.reset() // réinitialise le formulaire 
 
       console.log(f.valid);
