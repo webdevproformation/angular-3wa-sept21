@@ -1,0 +1,25 @@
+2 manières d'ajouter du css dans un composant 
+
+
+@Component({
+    styles : [ 
+        `h1{
+            font-size:20px;    
+        }
+        p{
+             font-size:12px;    
+        }
+        `
+     ] // css imbriqué (dans le composant)
+     , 
+     styleUrls : ["./fichier.css"] // css externe 
+})
+
+// vous pouvez utiliser en même temps styles et styleUrls
+// attention priorités => la dernière règle utilisée est celle qui est prioritaire 
+
+// portée => par défaut si vous écrivez du css dans un composant il va être limité 
+// à ses balises html
+
+ng g c jour3/style
+

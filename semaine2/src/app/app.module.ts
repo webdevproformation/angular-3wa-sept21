@@ -7,6 +7,7 @@ import { LikeComponent } from './jour3/like.component';
 import { CommentaireComponent } from './jour3/commentaire.component';
 import { InstagramComponent } from './jour3/instagram.component';
 import { MenuComponent } from './jour3/menu.component';
+import { StyleComponent } from './jour3/style.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { MenuComponent } from './jour3/menu.component';
     LikeComponent,
     CommentaireComponent,
     InstagramComponent,
-    MenuComponent 
+    MenuComponent,
+    StyleComponent 
   ],
   imports: [
     BrowserModule
