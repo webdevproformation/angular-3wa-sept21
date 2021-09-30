@@ -8,13 +8,16 @@ import { Component, OnInit } from '@angular/core';
       <div class="form-group">
         <label for="email">votre email :</label>
         <input type="text" placeholder="email@yahoo.fr" name="email" class="form-control" id="email" 
-          #email="ngModel" ngModel 
+          #email="ngModel" ngModel (change)="onChangeEmail(email)"
           required 
           minlength="10"
           maxlength="100"
           pattern="^[a-zA-Z0-9\.\-]+@[a-zA-Z0-9]+\.[a-z]{2,}$"
         >
         <div class="alert alert-danger" *ngIf="email.touched && !email.valid">
+          <div *ngIf="email.errors?.required">Email est requis</div>
+          <div *ngIf="email.errors?.minlength">email doit avoir au minimum {{ email.errors?.minlength.requiredLength }} caractères</div>
+          <div *ngIf="email.errors?.pattern">email doit suivre le pattern {{ email.errors?.pattern.requiredPattern }}</div>
         </div>
       </div>
       <div class="form-group">
@@ -38,6 +41,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
   public show : boolean = false;
+
+  public onChangeEmail(email :any){
+      console.log(email.errors)
+  }
   public submitFormulaire( f :any , email :any , commentaire :any){
     if(f.valid){
       console.log(f.value);

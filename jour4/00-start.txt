@@ -1,0 +1,75 @@
+https://github.com/webdevproformation/angular-3wa-sept21
+
+
+angular
+https://formation.webdevpro.net/angular
+login : angular
+passwd : google
+
+
+--- remise à zero du projet 
+
+-- src/app/app.module.ts 
+conserver 
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule , ReactiveFormsModule } from "@angular/forms";
+import { AppComponent } from './app.component';
+
+-- src/app/app.component.ts 
+
+ <div class="container">
+      <header class="row">
+        <h1>{{ title }}</h1>
+      </header>
+</div>
+
+// gestion des erreurs dans les formulaires (Template driven Form)
+
+composant qui contient un formulaire 
+
+au niveau des champs de saisi => 
+
+<input type="text" name="nom" #nom="ngModel" ngModel required minlength="10" ...  >
+
+// https://www.w3schools.com/tags/tag_input.asp
+
+
+verifier est ce que ce que l'on sait est correcte 
+
+{{ nom.valid }}
+{{ nom.touched }}
+{{ nom.errors.required }} => potentiellement  nom.errors = null
+// donc nom.errors.required   null.required entrainer des bug 
+
+// syntaxe => Safe Traversal Operateur ? 
+{{ nom.errors?.required }}
+
+const b = {
+    largeur : 10,
+    proprietaire : {
+        nom : "Alain",
+        age : 12
+    }
+}
+// récupérer l'age du propriétaire 
+b.proprietaire.age => 12
+
+// récupérer l'email du propriétaire 
+b.proprietaire.email => undefined / null
+
+// récupérer l'email pro du propriétaire 
+b.proprietaire.email.pro => ERREUR => stoppe le code  *ngIf="null.pro" => stoppe le code 
+
+b.proprietaire.email?.pro => undefined  *ngIf="false" => undefined => transformé en false / true
+
+// ng g c jour4/newsletter
+
+// dans le composant créé => 
+// formulaire contient 1 input de type email 
+// input de type submit 
+// écrire la valeur saisie dans le champ email dans la console du navigateur 
+// lorsque vous cliquez sur le bouton submit 
+
+// vérifier le champ est rempli // qu'il contient 5 caractères au minimum
+//  qu'il contient 100 caractères au maximum 
