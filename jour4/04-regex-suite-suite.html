@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // vérification sur toute la chaine de caractères
+
+        const pattern1 = /[a-z]{2}/
+        // contient deux minuscules dans la chaine de caractère n'importe où
+
+        const pattern2 = /^[a-z]{2}/ 
+        // contient deux minuscules dans la chaine de caractère au début du string 
+
+        console.log(pattern2.test("1234567hj")); // false
+        console.log(pattern2.test("as1234567hj")); // true
+        console.log(pattern2.test("a1234567hj")); // false
+
+        //const pattern3 = /[a-z]$/
+        const pattern3 = /[a-z]{1}$/
+        // dont contenir 1 minuscule à la fin de la chaine de caractère 
+
+        console.log(pattern3.test("1234567")); // false
+        console.log(pattern3.test("as123ay4567")); // false
+        console.log(pattern3.test("a1234567hj")); // true
+
+        //const pattern4 = /^[a-z]{1}$/
+        const pattern4 = /^[a-z]$/ // doit être une chaine de caractère 1 seul caractère minuscule 
+
+        console.log(pattern4.test("c")) // true
+        console.log(pattern4.test("cb")) // false
+        console.log(pattern4.test("c123456t")) // false
+
+        /*
+            créer une expression régulière qui répond true pour toutes les valeurs suivantes
+
+            123.1234.567
+            1.1.5
+            12.1.522
+
+            => 
+        */
+        const pattern5 = /^[0-9]{1,3}\.[0-9]{1,4}\.[0-9]{1,3}$/
+
+        const liste = ["123.1234.567" ,"1.1.5" , "12.1.522" , "aaaa12.1.522aaaaaa"  ];
+        liste.forEach(item => console.log(pattern5.test(item)))
+
+        const pattern6 = /^\d{1,3}\.\d{1,4}\.\d{1,3}$/
+
+        liste.forEach(item => console.log(pattern6.test(item)))
+
+        /*
+        
+        créer une expression régulière qui retourne true pour les emails suivants : 
+
+        m@yahoo.fr
+        m-1@yahoo.fr
+        hello_1234!@yahoo.fr
+        hello_1234!@yahoo.fr
+        hello.1234!@yahoo.fr
+
+        */ 
+
+    </script>
+</body>
+</html>
