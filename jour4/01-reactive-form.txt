@@ -1,0 +1,7 @@
+il existe une deuxième manière de gérer des formulaires avec angular 
+
+ReactiveForm 
+
+plus de code dans la class et moins de code dans la vue 
+
+ng g c jour4/form1

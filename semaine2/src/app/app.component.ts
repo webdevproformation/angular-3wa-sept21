@@ -10,6 +10,12 @@ import { Component } from '@angular/core';
       <section class="row">
         <newsletter></newsletter>
       </section>
+      <section class="row">
+        <h2>Reactive Forms</h2> 
+        <div class="col-4">
+          <form1></form1>
+        </div> 
+      </section>
   </div>`
 })
 export class AppComponent {
