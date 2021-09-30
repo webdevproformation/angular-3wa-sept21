@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // expression régulière => objet qui permet de vérifier qu'un string ressemble à une forme => pattern 
+
+        const tel = "azertyuio"; // c'est pas un numéro de téléphone 
+        // en général la forme d'un numéro de téléphone 00 00 00 00 00 
+        const tel2 = "00 00 00 00 00"; // oui ça ressemble à la forme d'un numéro de téléphone 
+        // le contenu de la variable tel2 respecter un schema => pattern / forme 
+        // les expressions régulières langage qui permet de décrire une forme 
+
+        const tel3 = "00 00 00 00 01"; // oui téléphone valide
+        const tel4 = "00 00 00 00 0A"; // non téléphone invalide
+
+        // créer un objet qui va permettre de décrire une forme 
+
+        // pour créer une expression régulière en JS ( attention PHP la syntaxe pour créer une regex est différente)
+
+        // première manière 
+        const patternTel = new RegExp();
+
+        // deuxième manière 
+        const patternTel2 = / /;
+        // attention à ne pas confondre avec 
+        const patternTel3 = "/ /"; // string  pas une regex 
+
+        // première expression régulière 
+
+        const pattern1 = /a/ ; // je dois vérifier qu'une chaine de caractère contient la lettre "a" n'importe où dedans (au début / fin / milieu) 
+        // du moment qu'il y a au moins 1 lettre a dans ce texte => vrai !! 
+
+        console.log(pattern1)
+        console.log(pattern1.test("bonjour")) // false
+        console.log(pattern1.test("comment allez vous ????")) // true
+        console.log(pattern1.test("a blibli bli")) // true
+        console.log(pattern1.test("blibli bli a")) // true
+
+        // plage de caractère 1 lettres mais plusieurs lettres
+        const pattern2 = /[abc]/ ; 
+        // je dois vérifier qu'une chaine de caractère contient soit la lettre "a" soit la lettre b soit la lettre c n'importe où dedans (au début / fin / milieu)
+        // mais je peux les avoir toutes en même temps 
+
+        console.log(pattern2.test("bonjour")); // true
+        console.log(pattern2.test("hello")); // false
+
+        // plage de caractère est ce que contient une lettre minuscule 
+        // a => z n'importe où 
+
+        const pattern3 = /[abcdefghijklmnopqrstuvwxyz]/ ;
+        const pattern4 = /[a-z]/ // notation abrégée pour la plage de caractère minuscule 
+
+        console.log(pattern4.test("AZERTY")); // faux 
+        console.log(pattern4.test("0156d7RTY")); // true 
+
+        // plage de caractère 
+        // lettre minuscule a-z
+        // lettres majuscule A-Z
+        // chiffres 0-9
+
+        const pattern5 = /[a-zA-Z0-9]/ ; 
+
+        console.log(pattern5.test("bonjour")); // vrai
+        console.log(pattern5.test("01010101")); // vrai
+        console.log(pattern5.test("-,/.")); // false
+
+        // d'autres symbole sur le clavier => caractères spéciaux  !:.?, saut de ligne 
+        // caractères spéciaux français éèêçàû
+
+        console.log(pattern5.test("éèêçàû")); // false
+
+        const pattern6 = /[a-zA-Z0-9éèêçàû]/ ;  
+
+        console.log(pattern6.test("éèêçàû")); // true
+
+        // plage de caractère raccourci de raccourci 
+
+        // const pattern7 = /[a-zA-Zéèêçàû]/
+        const pattern7 = /[\D]/ // n'importe quelle lettre et caractères spéciaux  !:.?   MAIS pas les chiffres
+
+        // https://regex101.com/
+
+        console.log("ici",pattern7.test("12345678"));
+        console.log("ici2",pattern7.test("12345678s"));
+        console.log("ici3",pattern7.test("12345678é"));
+        console.log("ici4",pattern7.test("12345678"));
+
+        //const pattern8 = /[0-9]/
+        const pattern8 = /[\d]/ // est ce que ça contient un chiffre ?? 
+        
+        console.log("ici5",pattern8.test("12345678")); // true 
+        console.log("ici6",pattern8.test("bonjour les amis !")); // false
+
+        // accepter n'importe quelle caractère => tout 
+        const pattern9 = /./ ; // [a-zA-Z0-9]
+
+        console.log("ici7",pattern9.test("12345678")); // true 
+        console.log("ici8",pattern9.test("bonjour les amis !")); // true
+        console.log("ici9",pattern9.test("                            ")); // true
+
+    </script>
+</body>
+</html>
