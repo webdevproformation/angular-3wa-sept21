@@ -20,7 +20,8 @@ import {FormGroup, FormControl , Validators} from "@angular/forms"
       <input type="submit" class="btn btn-primary">
     </form>
     <p>{{ form.value | json }}</p> 
-    
+    <p>{{ commentaire?.errors | json }}</p> 
+    <!-- pause café rdv dans 11h17 @ toute suite !!! -->
   `
 })
 export class Form1Component implements OnInit {
@@ -34,7 +35,7 @@ export class Form1Component implements OnInit {
       [ 
         Validators.required , 
         Validators.minLength(5) , 
-        Validators.minLength(1000),
+        Validators.maxLength(1000),
         Validators.pattern(/^[a-z ]+$/)
       ]
     )
