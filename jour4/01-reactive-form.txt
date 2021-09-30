@@ -5,3 +5,18 @@ ReactiveForm
 plus de code dans la class et moins de code dans la vue 
 
 ng g c jour4/form1
+
+
+créer le composant form2 
+
+input de type text 
+menu déroulant => select 4  valeurs : vide / France / Allemage / Belgique
+textarea 
+
+utiliser reactive form pour générer et récupérer les valeurs saisies dans ce formulaire 
+
+input de type text => min 5 caractères et obligatoire
+select => obligatoire (ne peut pas être vide)
+textarea min 5 caractères et obligatoire maximum pattern minuscule chiffres majuscule espace et saut de ligne 
+
+si une de ces conditions n'est pas respectée afficher sous le champ concerné un message d'erreur ! 
