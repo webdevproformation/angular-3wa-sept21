@@ -14,10 +14,7 @@ import {FormGroup, FormControl} from "@angular/forms"
 
     <div *ngIf="login?.pending" class="alert alert-primary">en train de vérifier si l'identifiant existe ??</div>
     <p *ngIf="login?.errors" class="alert alert-danger">{{login?.errors?.message}}</p>
-
-  `,
-  styles: [
-  ]
+  `
 })
 export class Form3Component implements OnInit {
   // 22 rue du Paradis 75000 Paris
@@ -39,3 +36,4 @@ export class Form3Component implements OnInit {
   }
 
 }
+// rdv 14h06 bon appétit !!!!!!!! 

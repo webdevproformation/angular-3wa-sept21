@@ -29,3 +29,22 @@ si une de ces conditions n'est pas respectée afficher sous le champ concerné u
 
 // validationAsynchrone => créer un profil utilisateur, l'identifiant choisit il a déjà été choisi par une autre personne 
 // attendre qu'il y ait une requete vers la balise de données Est ce que la valeur saisie existe déjà dans la base de données ??? 
+
+// créer le composant form4
+// formulaire qui contient 2 champs 
+// mot de passe  => input text 
+// service  => input text 
+
+
+// validation personnalisée 
+// mot de passe => minimum 8 caractères // minuscule / majuscule // ?!-
+//                 obligatoirement que mA!
+//                                     aaaaaaaaaaaaaaa = faux  
+//                                     aaaaaaaaAaaaaaa = faux  
+//                                     aaaaaaaaA!aaaaa = vrai
+
+// => https://www.w3schools.com/tags/att_input_pattern.asp
+
+// service => validation asynchrone est ce que la personne a bien mis "web" / "commercial" / "administratif" => si l'utilisateur a bien écrit un de ces mots clés => ok // sinon message d'erreur 
+
+
