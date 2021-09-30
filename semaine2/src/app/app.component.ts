@@ -15,6 +15,9 @@ import { Component } from '@angular/core';
         <div class="col-4">
           <form1></form1>
         </div> 
+        <div class="col-4">
+          <form2></form2>
+        </div> 
       </section>
   </div>`
 })
