@@ -37,4 +37,27 @@ export class addressValidator{
             } , 3000)
         } )
     }
+    static validPassword (control : AbstractControl) : ValidationErrors | null{
+        const pattern: RegExp = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\?\-!]).{8,}$/;
+        if(!pattern.test(control.value)){
+            return {
+                message : "le password est invalide"
+            }
+        }
+        return null;
+    }
+    static validService(control : AbstractControl) : Promise< ValidationErrors | null > {
+        return new Promise( (resolve , reject ) => { 
+            const services : Array<string> = ["web" , "commercial" , "administratif"];
+            setTimeout( () => {
+                if(!services.includes(control.value)){
+                    resolve({
+                        message : "le service mentionné n'existe pas ..."
+                    })
+                } else {
+                    resolve( null )
+                }
+            } , 1000)
+        } )
+    }
 }
