@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 
+        const pattern1 = /./;  // vérifier plus rien => trop large 
+
+        // plage de caractère => échappement des caractère spéciaux
+
+        // est ce que dans un texte j'ai des minuscules a-z mais aussi le symbole . ou le symbole - 
+
+        const pattern2 = /[a-z\.]/
+
+        console.log(pattern2.test("1234567")); // false
+
+        const pattern3 = /[a-z\.\[\] ]/
+        console.log(pattern3.test("1234567")); // false 
+        console.log(pattern3.test("1234567[")); // true
+        console.log(pattern3.test("12.34567")); // true
+        
+        const pattern4 = /[a-z\.\[\]\ ]/ ;
+        const pattern5 = /[a-z\.\[\]_ ]/ ;
+
+        // une fois avoir vu les plages de caractères 
+        // multiplicateur
+
+        const pattern6 = /[a-z]{2}/
+
+        // deux minuscules l'un à côté de l'autre OBLIGATOIREMENT n'importe où dans la chaine de caractère 
+
+        // 0101 a 010101
+        console.log("pattern6")
+        console.log(pattern6.test("0101 a 010101")); // false
+        console.log(pattern6.test("0101 a 0101zq")); // true
+        console.log(pattern6.test("yUi0101 a 0101")); // false
+        console.log(pattern6.test("yui0101 a 0101")); // true
+
+        const pattern7 = /[a-z][a-z]/
+        console.log("pattern7")
+        console.log(pattern7.test("0101 a 010101")); // false
+        console.log(pattern7.test("0101 a 0101zq")); // true
+        console.log(pattern7.test("yUi0101 a 0101")); // false
+        console.log(pattern7.test("yui0101 a 0101")); // true
+
+        const pattern8 = /[a-z]{3}/ // /[a-z][a-z][a-z]/
+        console.log(pattern8.test("yui0101 a 0101")); // true
+        console.log(pattern8.test("yi0101 a 0101")); // false
+
+        const pattern9 = /[a-z]{3,4}/ // 3 ou 4 lettres minuscules
+        const pattern10 = /[a-z]{3,}/  // à partir de 3 
+        
+        // raccourci de multiplicateur 
+
+        const pattern11 = /[a-z]{0,}/
+        const pattern11_prim = /[a-z]*/
+
+        const pattern12 = /[a-z]{1,}/
+        const pattern12_prim = /[a-z]+/
+
+        // début / fin de chaine de caractère ^ $
+        // regroupement ( )
+        
+        // pause => rdv 16h18 @ toute suite !!! 
+
+        </script>
+</body>
+</html>
