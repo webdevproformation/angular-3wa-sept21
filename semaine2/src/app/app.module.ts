@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { NewsletterComponent } from './jour4/newsletter.component';
 import { Form1Component } from './jour4/form1.component';
 import { Form2Component } from './jour4/form2.component';
+import { Form3Component } from './jour4/form3.component';
 
 
 @NgModule({
@@ -12,7 +13,8 @@ import { Form2Component } from './jour4/form2.component';
     AppComponent,
     NewsletterComponent,
     Form1Component,
-    Form2Component
+    Form2Component,
+    Form3Component
   ],
   imports: [
     BrowserModule,

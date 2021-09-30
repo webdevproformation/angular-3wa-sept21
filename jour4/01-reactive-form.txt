@@ -20,3 +20,12 @@ select => obligatoire (ne peut pas être vide)
 textarea min 5 caractères et obligatoire maximum pattern minuscule chiffres majuscule espace et saut de ligne 
 
 si une de ces conditions n'est pas respectée afficher sous le champ concerné un message d'erreur ! 
+
+
+// il est possible de créer ses propres Valideur (règle de validation)
+
+// ng g c jour4/form3
+// créer manuellement un fichier customValidator.ts dans le dossier jour4
+
+// validationAsynchrone => créer un profil utilisateur, l'identifiant choisit il a déjà été choisi par une autre personne 
+// attendre qu'il y ait une requete vers la balise de données Est ce que la valeur saisie existe déjà dans la base de données ??? 
