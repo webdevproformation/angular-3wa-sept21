@@ -7,6 +7,9 @@ import { Component } from '@angular/core';
       <header class="row">
         <h1>{{ title }}</h1>
       </header>
+      <section class="row">
+        <newsletter></newsletter>
+      </section>
   </div>`
 })
 export class AppComponent {
