@@ -44,5 +44,27 @@ ng g c jour5/obs1
 
 
 
+new Observable( observer => {
+    observer.next(1)
+    observer.next(2)
+    observer.next(3)
+})
+
+
+of( [ 1,2,3 ] )
+from ( [ 1,2,3 ] )
+
+timer( )
+fromEvent( )
+toPromise( )
+
+// rxjs  récupérer un flux de données => transformer via la fonction .pipe()
+
+
+placer entre Observable -  pipe( opérateur , opérateur )   - souscription
+
+// transformer le flux de données reçu avant de s'abonner et de l'afficher à l'écran 
+
+// ng 
 
 
