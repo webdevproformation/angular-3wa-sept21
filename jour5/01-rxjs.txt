@@ -1,0 +1,48 @@
+rxjs => librairie Google  => https://rxjs.dev/ 
+basé sur le design pattern Observer 
+
+Ecouter quand une source de données est modifiée
+
+ajax => modifier les données => mettre à jour le DOM 
+ajax => modifier les données <= mettre à jour le DOM 
+
+Ecouter la modification des données ( source de données )
+
+1 Observable => (source de données que l'on veut écouter)
+2 Observer => la source de données 
+
+3 s'inscrire à l'observable ( subscrire() ) déclencher la récupération de données 
+4 arrêter d'écouter l'observable ( unsubscribe( )) stopper l'écoute de modification des données 
+
+ng g c jour5/obs1
+
+// créer un nouveau composant obs3 
+
+// utiliser la librairie rxjs pour créer une source de données observable 
+
+// émettre 3 valeurs 
+// { id : 1 , titre : "article 1" , contenu = "lorem ipsum"}
+// { id : 2 , titre : "article 2" , contenu = "lorem ipsum"}
+// { id : 3 , titre : "article 3" , contenu = "lorem ipsum"}
+
+// lors de l'initialisation du composant afficher dans la vue le html suivant en utilisant la source de données observable 
+
+<div>
+    <article>
+        <h3>article 1</h3>
+        <p>lorem ipsum</p>
+    </article>
+   <article>
+        <h3>article 1</h3>
+        <p>lorem ipsum</p>
+    </article>
+    <article>
+        <h3>article 3</h3>
+        <p>lorem ipsum</p>
+    </article>
+<div>
+
+
+
+
+

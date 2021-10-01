@@ -7,6 +7,15 @@ import { Component } from '@angular/core';
       <header class="row">
         <h1>{{ title }}</h1>
       </header>
+      <section  class="row">
+        <div class="col-4">
+          <obs1></obs1>
+        </div>
+        <div class="col-4">
+          <obs2></obs2>
+        </div>
+      </section>
+      <hr>
       <section class="row">
         <div class="col-4">
           <cv></cv>
