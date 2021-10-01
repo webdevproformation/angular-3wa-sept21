@@ -26,6 +26,9 @@ import { Component } from '@angular/core';
         <div class="col-4">
           <obs6></obs6>
         </div>
+        <div class="col-4">
+          <jour5-article></jour5-article>
+        </div>
       </section>
       <hr>
       <section class="row">
