@@ -10,6 +10,7 @@ import { Obs2Component } from './jour5/obs2.component';
 import { Obs3Component } from './jour5/obs3.component';
 import { Obs4Component } from './jour5/obs4.component';
 import { Obs5Component } from './jour5/obs5.component';
+import { Obs6Component } from './jour5/obs6.component';
 
 
 
@@ -23,7 +24,8 @@ import { Obs5Component } from './jour5/obs5.component';
     Obs2Component,
     Obs3Component,
     Obs4Component,
-    Obs5Component
+    Obs5Component,
+    Obs6Component
   ],
   imports: [
     BrowserModule,
