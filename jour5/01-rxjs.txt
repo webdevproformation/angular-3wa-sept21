@@ -68,3 +68,25 @@ placer entre Observable -  pipe( opérateur , opérateur )   - souscription
 // ng 
 
 
+// https://www.learnrxjs.io/learn-rxjs/operators
+
+// créer un nouveau composant obs6 
+
+// créer une source observable qui émettre ces valeurs 1 par 1 => from 
+[
+// { id : 1 , titre : "article 1" , contenu = "lorem ipsum"}
+// { id : 2 , titre : "article 2" , contenu = "lorem ipsum"}
+// { id : 3 , titre : "article 3" , contenu = "lorem ipsum"}
+]
+
+utiliser l'opérateur pipe(  map( ) ) 
+
+pour chaque élément ajouter un nouvelle propriété dte : "01/10/2021"
+
+// afficher dans le composant 
+<ul>
+    <li> article 1 -  01/10/2021</li>
+    <li> article 2 -  01/10/2021</li>
+    <li> article 3 -  01/10/2021</li>
+</ul>
+

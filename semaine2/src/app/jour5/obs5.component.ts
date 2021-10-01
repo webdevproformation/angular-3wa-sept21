@@ -32,5 +32,8 @@ export class Obs5Component implements OnInit {
       console.log(donnee)
     })
   }
-
 }
+
+// https://www.learnrxjs.io/learn-rxjs/operators
+
+
