@@ -14,6 +14,9 @@ import { Component } from '@angular/core';
         <div class="col-4">
           <obs2></obs2>
         </div>
+        <div class="col-4">
+          <obs3></obs3>
+        </div>
       </section>
       <hr>
       <section class="row">

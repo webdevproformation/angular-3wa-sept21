@@ -1,14 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable  } from 'rxjs';
 
 @Component({
   selector: 'obs2',
   template: `
     <h3>Obs 2</h3>
     <p>{{ texte }}</p>
-  `,
-  styles: [
-  ]
+  `
 })
 export class Obs2Component implements OnInit {
   public texte : string = "";

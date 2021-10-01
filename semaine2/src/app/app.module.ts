@@ -7,6 +7,7 @@ import { UploadComponent } from './jour5/upload.component';
 import { ExoComponent } from './jour5/exo.component';
 import { Obs1Component } from './jour5/obs1.component';
 import { Obs2Component } from './jour5/obs2.component';
+import { Obs3Component } from './jour5/obs3.component';
 
 
 
@@ -17,7 +18,8 @@ import { Obs2Component } from './jour5/obs2.component';
     UploadComponent,
     ExoComponent,
     Obs1Component,
-    Obs2Component
+    Obs2Component,
+    Obs3Component
   ],
   imports: [
     BrowserModule,
