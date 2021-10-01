@@ -1,0 +1,62 @@
+https://github.com/webdevproformation/angular-3wa-sept21
+
+angular
+https://formation.webdevpro.net/angular
+login : angular
+passwd : google
+
+- créer dossier jour5
+- lancer votre server => ng serve -o
+
+-> réinitialiser notre projet 
+src/app/app.component.ts
+src/app/app.module.ts
+
+suite et fin des réactive form 
+
+formulaire qui contient beaucoup de champ 
+
+prenom / nom 
+
+rue / cp / ville
+
+=> formation réalisée par la personne 
+
+organisme / année Diplome / remarque 
+
+{
+    prenom : "",
+    nom : "",
+    rue : "",
+    cp : "",
+    ville : ""
+}
+
+
+{
+    profil : { 
+        prenom : "",
+        nom : "",
+    }
+    adresse : {
+        rue : "",
+        cp : "",
+        ville : ""
+    }
+}
+
+=> création de new FormGroup ({ 
+    profil : {
+        prenom : new FormControl(),
+        nom : "",
+    }
+    adresse : {
+
+    }
+})
+ng g c jour5/cv
+
+FormArray => créer des formulaires directement depuis la class 
+// ajouter des champs sur ses compétences 
+
+// js node angular ... 

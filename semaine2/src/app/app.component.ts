@@ -8,25 +8,12 @@ import { Component } from '@angular/core';
         <h1>{{ title }}</h1>
       </header>
       <section class="row">
-        <newsletter></newsletter>
-      </section>
-      <section class="row">
-        <h2>Reactive Forms</h2> 
         <div class="col-4">
-          <form1></form1>
-        </div> 
-        <div class="col-4">
-          <form2></form2>
-        </div> 
-        <div class="col-4">
-          <form3></form3>
-        </div> 
-        <div class="col-4">
-          <form4></form4>
-        </div> 
+          <cv></cv>
+        </div>
       </section>
   </div>`
 })
 export class AppComponent {
-  title = 'jour4';
+  title = 'jour5';
 }
