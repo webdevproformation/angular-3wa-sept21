@@ -60,3 +60,5 @@ FormArray => créer des formulaires directement depuis la class
 // ajouter des champs sur ses compétences 
 
 // js node angular ... 
+
+// ng g c jour5/upload
