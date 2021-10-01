@@ -12,8 +12,11 @@ import { Component } from '@angular/core';
           <cv></cv>
         </div>
         <div class="col-4">
-        <upload></upload>
-      </div>
+          <upload></upload>
+        </div>
+        <div class="col-4">
+          <exo></exo>
+        </div>
       </section>
   </div>`
 })

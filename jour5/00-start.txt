@@ -63,6 +63,8 @@ FormArray => créer des formulaires directement depuis la class
 
 // ng g c jour5/upload
 
+// -----------------------------
+
 // créer le composant exo  dans le dossier jour5 
 // utiliser form Builder
 

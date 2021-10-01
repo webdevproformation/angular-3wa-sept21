@@ -4,6 +4,7 @@ import { FormsModule , ReactiveFormsModule } from "@angular/forms";
 import { AppComponent } from './app.component';
 import { CvComponent } from './jour5/cv.component';
 import { UploadComponent } from './jour5/upload.component';
+import { ExoComponent } from './jour5/exo.component';
 
 
 
@@ -11,7 +12,8 @@ import { UploadComponent } from './jour5/upload.component';
   declarations: [
     AppComponent,
     CvComponent,
-    UploadComponent
+    UploadComponent,
+    ExoComponent
   ],
   imports: [
     BrowserModule,
