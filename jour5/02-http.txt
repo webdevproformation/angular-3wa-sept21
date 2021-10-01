@@ -23,3 +23,20 @@ json-server --watch db.json
 
 // utiliser le module HTTP intégré dans Angular 
 // app.module.ts 
+
+// ajouter dans le fichier db.json  les valeurs suivantes 
+
+
+{
+    "articles" : [
+        {"id" : 1 , "titre" : "article 1" , "contenu" : "lorem ipsum"},
+        {"id" : 2 , "titre" : "article 2" , "contenu" : "lorem ipsum"},
+        {"id" : 3 , "titre" : "article 3" , "contenu" : "lorem ipsum"}
+    ],
+    "categories" : [ "node", "angular" , "ajax" ]
+}
+
+// dans le composant article que l'on vient de créer 
+via l'adresse : http://localhost:3000/categories
+
+// créer une nouvelle méthode récupérer les catégories et les afficher à l'écran 
