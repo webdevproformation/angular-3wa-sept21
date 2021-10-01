@@ -62,3 +62,19 @@ FormArray => créer des formulaires directement depuis la class
 // js node angular ... 
 
 // ng g c jour5/upload
+
+// créer le composant exo  dans le dossier jour5 
+// utiliser form Builder
+
+nom => input type text 
+pays => menu déroulant avec 4 valeurs : vide / france / allemagne / belgique 
+adresse (groupe)
+    rue input type text 
+    ville / input type text 
+    cp / input type text 
+
+ajouter à la volé hobby des groupes 
+
+input type texte (hobby) / date (input ) / supprimer via un bouton 
+
+soumettre le formulaire complet 
